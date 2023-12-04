@@ -1,0 +1,233 @@
+#part1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#part1-left {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: auto;
+    margin-left: 2%;
+}
+
+#part1-right {
+    margin: auto;
+}
+
+#img1 {
+    max-width: 40vw;
+    margin: auto;
+}
+
+#part1-top {
+    width: 70%; 
+    text-align: center;
+    justify-self: center;
+    color: black; 
+    font-size: 1.7em; 
+    font-family: Inter; 
+    font-weight: 700;
+    word-wrap: break-word;
+    margin: auto;
+    margin-bottom: 3%;
+}
+
+#part1-mid {
+    width: 100%; 
+    text-align: center; 
+    color: black; 
+    font-size: 1.5em; 
+    font-family: Inter; 
+    font-weight: 400; 
+    word-wrap: break-word;
+    margin: auto;
+    margin-bottom: 3%;
+}
+
+#part1-bottom {
+    cursor: pointer;
+    display: block;
+    width: fit-content;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.5em;
+    text-shadow: 0.5px 0.5px black;
+    font-weight: 700;
+    white-space: nowrap;
+    color: white;
+    padding: 15px;
+    margin: auto;
+    border: 1px solid black;
+    border-radius: 1px;
+    background-color: rgb(58, 117, 175);
+    transition: all 0.3s;
+    transition-timing-function: linear;
+    box-shadow: none;
+}
+
+#part2 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 0.7fr 1.6fr 0.7fr;
+}
+
+#part2-left {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    margin: auto;
+}
+
+#part2-right {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    margin: auto;
+}
+
+#part2-mid {
+    display: grid;
+    grid-template-rows: 1fr;
+    margin: auto;
+}
+
+#part2-text {
+    width: fit-content;
+    height: fit-content;
+    padding: 15%;
+    align-items: center;
+    text-align: center;
+    justify-self: center;
+    border-radius: 50%;
+    background-color: rgb(58, 117, 175);
+}
+
+#part2-textp {
+    color: white; 
+    font-size: 1.2rem; 
+    font-family: Inter; 
+    font-weight: 400;
+}
+
+.part2-img {
+    max-width: 20vw;
+    margin: auto;
+}
+
+#part3-circles {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: auto;
+}
+
+.part3-text {
+    width: 350px;
+    height: 350px;
+    padding: 4%;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    justify-self: center;
+    border-radius: 50%;
+    background-color: rgb(58, 117, 175);
+    display: grid;
+    grid-template-rows: 0.5fr 2fr;
+    row-gap: 0;
+}
+
+#part3-text-top {
+    color: white; 
+    font-size: 1.1rem; 
+    font-family: Inter; 
+    font-weight: 400;
+}
+
+#part3-text-bottom {
+    color: white; 
+    font-size: 0.9rem; 
+    font-family: Inter; 
+    font-weight: 400;
+}
+
+#part4 {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: auto;
+    margin-top: 2%;
+}
+
+#part4-top {
+    width: 50%; 
+    text-align: center;
+    justify-self: center;
+    color: black; 
+    font-size: 1.7em; 
+    font-family: Inter; 
+    font-weight: 700;
+    word-wrap: break-word;
+    margin: auto;
+    margin-bottom: 2%;
+}
+
+.part4-mid {
+    width: 70%; 
+    text-align: center; 
+    color: black; 
+    font-size: 1.4em; 
+    font-family: Inter; 
+    font-weight: 400; 
+    word-wrap: break-word;
+    margin: auto;
+    margin-bottom: 3%;
+}
+
+@media only screen and (max-width: 1440px) {
+    .part3-text {
+        width: 220px;
+        height: 220px;
+        padding: 0;
+    }
+
+    #part3-text-top {
+        font-size: 1.0rem; 
+    }
+}
+
+@media only screen and (max-width: 980px) {
+    #part1-top {
+        font-size: 1.2rem; 
+        margin-bottom: 1%;
+    }
+    
+    #part1-mid {
+        font-size: 1.1rem; 
+        margin-bottom: 1%;
+    }
+
+    #part2-text {
+        width: 200px;
+        height: 200px;
+    }
+
+    #part2-textp {
+        font-size: 0.9rem; 
+    }
+
+    #part3-circles {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .part3-text {
+        width: 48vw;
+        height: 48vw;
+    }
+
+    #part3-text-bottom {
+        font-size: 0.7rem; 
+    }
+
+    #part4-top {
+        font-size: 1.3em; 
+    }
+
+    .part4-mid {
+        font-size: 1.1em; 
+    }
+}

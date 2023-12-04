@@ -1,0 +1,144 @@
+body {
+    margin: 0;
+}
+
+a:link, a:visited {
+    text-decoration:none;
+ }
+
+.navigation-bar {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    background-color: rgb(58, 117, 175);
+    max-width: 100%;
+}
+
+.navigation-links {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+.nav-text {
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    font-family:Inter;
+    font-size: 1.4em;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    white-space: nowrap;
+    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: all 0.5s;
+}
+
+.nav-text:hover {
+    color: rgb(255, 255, 255);
+    text-shadow: rgb(235, 235, 235) 1px 0 1px;
+}
+
+.navigation-links li {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.logo {
+    text-decoration: none;
+    max-width: 350px;
+    margin: 5px;
+    margin-left: 1%;
+    transition: all 0.4s;
+}
+
+.hamburger {
+    display: none;
+    margin-right: 10px;
+    justify-self: end;
+}
+
+.line {
+    display: visible;
+    width: 36px;
+    height: 8px;
+    margin: 5px 0;
+    transition: 0.7s;
+    background-color: white;
+    border-radius: 4px;
+}
+
+.lines-change .line1 {
+    transform: translate(0, 13px) rotate(-45deg)
+}
+
+.lines-change .line3 {
+    transform: translate(0, -13px) rotate(45deg)
+}
+
+.lines-change .line2 {
+    opacity: 0;
+}
+
+#top-navigation {
+    display: none;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 90vh;
+    background-color: rgb(37,40,43);
+    margin: 0;
+    padding: 0;
+    grid-template-rows: 1fr;
+}
+
+.top-navigation-links {
+    display: grid;
+    list-style: none;
+    grid-template-rows: 1fr;
+    row-gap: 10vh;
+    justify-items: center;
+    padding-inline-start: 0;
+}
+
+@media only screen and (max-width: 1440px) {
+    .logo {
+        max-width: 250px;
+        margin: 3px;
+    }
+    
+    .nav-text {
+        font-size: 1.4em;
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+}
+
+@media only screen and (max-width: 990px) {
+    .logo {
+        max-width: 250px;
+        margin: 2px;
+        justify-self: start;
+    }
+
+    .navigation-links {
+        display: none;
+    }
+
+    .navigation-bar {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+    }
+
+    .hamburger {
+        display: inline-block;
+    }
+
+    .nav-text {
+        font-size: 2.4em;
+        font-weight: 600;
+    }
+}

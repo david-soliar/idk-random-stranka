@@ -1,0 +1,7 @@
+footer {
+    display: grid;
+    width: 100%;
+    height: fit-content;
+    background-color: rgb(58, 117, 175);
+    grid-template-columns: 1fr;
+}
