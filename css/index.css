@@ -202,12 +202,12 @@
     }
 
     #part2-text {
-        width: 200px;
-        height: 200px;
+        width: 150px;
+        height: 150px;
     }
 
     #part2-textp {
-        font-size: 0.9rem; 
+        font-size: 0.7rem; 
     }
 
     #part3-circles {
